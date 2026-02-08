@@ -5,6 +5,9 @@ on:
     # Runs at 08:00 UTC every day
     - cron: '30 18 * * *'
   workflow_dispatch:
+  
+permissions:
+  contents: write
 
 jobs:
   run-script:
