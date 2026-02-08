@@ -89,7 +89,9 @@ def create_pdf(text, img_path, date_str):
 
     pdf.image(img_path, x=15, w=180)
 
-    pdf_path = f"Interview_Prep_{date_str}.pdf"
+    os.makedirs("generated", exist_ok=True)
+    pdf_path = f"generated/Interview_Prep_{date_str}.pdf"
+    
     pdf.output(pdf_path)
 
     return pdf_path
