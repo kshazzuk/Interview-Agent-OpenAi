@@ -49,7 +49,7 @@ def get_content_and_image(date_str):
     image_response = client.images.generate(
         model="gpt-image-1",
         prompt=image_prompt,
-        size="1792x1024",
+        size="1536x1024",
         quality="high"
     )
 
