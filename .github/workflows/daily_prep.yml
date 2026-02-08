@@ -3,7 +3,7 @@ name: Daily Interview Agent (OpenAI)
 on:
   schedule:
     # Runs at 08:00 UTC every day
-    - cron: '0 8 * * *'
+    - cron: '30 18 * * *'
   workflow_dispatch:
 
 jobs:
